@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="CakeApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Cake Shop</title>
+  <!-- Bootstrap CSS and JS files -->
+
+  <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="styles/main.css"/>
+
+</head>
+<body ng-controller="mainController">
+
+  <!--bootstrap navigation with home page link and login button -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Cake Shop</a>
+          <button type="button" class="btn btn-primary navbar-btn">Sign in</button>
+          <button type="button" class="btn btn-primary">
+            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Cart
+          </button>
+      </div>
+    </div>
+  </nav>
+
+  <!--Different cakes with name, price and add to cart button -->
+  <div class="row cakes-panel">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail cake-image">
+        <img src="images/cake1.jpg" alt="Cake-1">
+        <div class="caption">
+          <h3>Chocolate Cake</h3>
+          <h1>10$</h1>
+          <p class="text-center"><a href="#" class="btn btn-warning" role="button">Add to Cart</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail cake-image">
+        <img src="images/cake2.jpg" alt="Cake-2">
+        <div class="caption">
+          <h3>Creme Cake</h3>
+          <h1>8$</h1>
+          <p class="text-center"><a href="#" class="btn btn-warning" role="button">Add to Cart</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail cake-image">
+        <img src="images/cake3.jpg" alt="Cake-3">
+        <div class="caption">
+          <h3>Strawberry Cake</h3>
+          <h1>12$</h1>
+          <p class="text-center"><a href="#" class="btn btn-warning" role="button">Add to Cart</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail cake-image">
+        <img src="images/cake4.jpg" alt="Cake-4">
+        <div class="caption">
+          <h3>Creme-Nuts Cake</h3>
+          <h1>8$</h1>
+          <p class="text-center"><a href="#" class="btn btn-warning" role="button">Add to Cart</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail cake-image">
+        <img src="images/cake5.jpg" alt="Cake-5">
+        <div class="caption">
+          <h3>Strawberry-Chocolate Cake</h3>
+          <h1>14$</h1>
+          <p class="text-center"><a href="#" class="btn btn-warning" role="button">Add to Cart</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail cake-image">
+        <img src="images/cake6.jpg" alt="Cake-6">
+        <div class="caption">
+          <h3>Cherry-Cream Cake</h3>
+          <h1>15$</h1>
+          <p class="text-center"><a href="#" class="btn btn-warning" role="button">Add to Cart</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="/libs/jquery/dist/jquery.min.js"></script>
+    <script src="/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/libs/angular/angular.js"></script>
+    <script src="/libs/angular-route/angular-route.js"></script>
+    <script src="/scripts/controllers/mainCtrl.js"></script>
+    <script src="/scripts/controllers/loginCtrl.js"></script>
+    <script src="/scripts/services/loginService.js"></script>
+    <script src="/scripts/app.js"></script>
+
+</body>
+</html>
